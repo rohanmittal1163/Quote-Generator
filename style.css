@@ -1,0 +1,133 @@
+*,
+*::after,
+*::before {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	background-image: linear-gradient(to left, #e2aa40, #fc3664);
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+}
+.container {
+	background: white;
+	width: 550px;
+	padding: 35px;
+	border-radius: 10px;
+	box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	flex-direction: column;
+}
+p.heading {
+	font-size: 2rem;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+}
+.quote_block {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	gap: 30px;
+	flex-direction: column;
+}
+
+.quote {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	gap: 30px;
+}
+.quote p {
+	font-size: 20px;
+	text-align: center;
+}
+.quotemaster {
+	position: relative;
+}
+.quotemaster::before {
+	content: '';
+	width: 25px;
+	height: 10px;
+	background-color: white;
+	border-top: 1px solid gray;
+	position: absolute;
+	left: -30px;
+	top: 50%;
+}
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-top: 2px solid silver;
+	padding-top: 20px;
+}
+ul {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+ul li {
+	list-style-type: none;
+	color: #fc3664;
+	border-radius: 100%;
+	border: 2px solid #fc3664;
+	padding: 8px;
+	cursor: pointer;
+	transition: all 200ms linear;
+}
+ul li:hover {
+	background-color: #fc3664;
+	color: white;
+}
+ul li:nth-child(2) {
+	padding: 8px 10px 8px 10px;
+}
+ul li:nth-child(3) {
+	padding: 8px 9px 8px 9px;
+}
+.btn {
+	border: 0;
+	outline: 0;
+	background-image: linear-gradient(to left, #e2aa40, #fc3664);
+	font-weight: bold;
+	text-transform: capitalize;
+	color: white;
+	padding: 10px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.btn:hover {
+	filter: brightness(1.2);
+}
+.topics {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 10px;
+	width: 100%;
+	flex-grow: 1;
+}
+.active {
+	background-image: linear-gradient(to left, #e2aa40, #fc3664);
+	color: white;
+	font-weight: bolder;
+}
+.tags {
+	background-color: whitesmoke;
+	border: 0;
+	padding: 10px 20px;
+	border-radius: 200px;
+	cursor: pointer;
+	outline: 0;
+	text-transform: capitalize;
+}
